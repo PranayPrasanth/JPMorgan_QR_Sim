@@ -55,7 +55,7 @@ def price_gas_storage_contract(
 
 # Load market prices CSV
 market_prices = pd.read_csv('./Nat_Gas (1).csv')
-print(market_prices['Dates'].dtype)
+
 
 
 
