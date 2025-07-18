@@ -1,133 +1,100 @@
-JPMorgan Chase Quantitative Research Simulation
-This repository contains the solutions and analyses performed as part of the JPMorgan Chase Quantitative Research Virtual Experience. This simulation provided hands-on experience in various aspects of quantitative finance, including asset pricing, credit risk modeling, and statistical analysis, using Python.
+# 🧮 JPMorgan Chase Quantitative Research Simulation
 
-Table of Contents
-Project Overview
+This repository contains the solutions and analyses performed as part of the **JPMorgan Chase Quantitative Research Virtual Experience**. The simulation provided hands-on experience in various aspects of **quantitative finance**, including asset pricing, credit risk modeling, and statistical analysis using Python.
 
-Tasks Completed
+---
 
-Task 1: Natural Gas Price Forecasting
+## 📑 Table of Contents
 
-Task 2: Gas Storage Contract Pricing
+- [Project Overview](#project-overview)  
+- [Tasks Completed](#tasks-completed)  
+  - [Task 1: Natural Gas Price Forecasting](#task-1-natural-gas-price-forecasting)  
+  - [Task 2: Gas Storage Contract Pricing](#task-2-gas-storage-contract-pricing)  
+  - [Task 3: Credit Default Prediction & Expected Loss](#task-3-credit-default-prediction--expected-loss)  
+  - [Task 4: FICO Score Bucketing Methodologies](#task-4-fico-score-bucketing-methodologies)  
+- [Technologies Used](#technologies-used)  
+- [How to Run the Code](#how-to-run-the-code)  
+- [Contact](#contact)  
 
-Task 3: Credit Default Prediction & Expected Loss
+---
 
-Task 4: FICO Score Bucketing Methodologies
+## 📘 Project Overview
 
-Technologies Used
+The **JPMorgan Chase Quantitative Research Simulation** is designed to expose participants to real-world challenges faced by quantitative analysts in a financial institution. This project involved developing analytical models and performing statistical analyses on simulated financial datasets to address problems in asset valuation and risk management.
 
-How to Run the Code
+---
 
-Contact
+## ✅ Tasks Completed
 
-Project Overview
-The JPMorgan Chase Quantitative Research Simulation is designed to expose participants to real-world challenges faced by quantitative analysts in a financial institution. This project involved developing analytical models and performing statistical analyses on simulated financial datasets to address problems in asset valuation and risk management.
+### 🧾 Task 1: Natural Gas Price Forecasting
 
-Tasks Completed
-Task 1: Natural Gas Price Forecasting
-Objective: To forecast future natural gas prices using time series analysis.
+**Objective:** Forecast future natural gas prices using time series analysis.
 
-Methodology:
+**Methodology:**
+- Loaded and preprocessed historical natural gas price data, handling date conversions and missing values.
+- Trained an **ARIMA(2,1,2)** model to capture trends and seasonality.
+- Forecasted gas prices up to 12 months into the future.
 
-Loaded and preprocessed historical natural gas price data, handling date conversions, setting monthly frequency, and interpolating missing values.
+**Key Outcome:** A robust time series forecasting model capable of predicting future gas prices.
 
-Developed and trained an ARIMA(2,1,2) model to capture trends and seasonality in the gas price series.
+---
 
-Implemented a function to estimate gas prices for both historical and future dates, with a specific focus on forecasting up to 12 months ahead.
+### 💰 Task 2: Gas Storage Contract Pricing
 
-Key Outcome: A robust time series forecasting model capable of predicting future gas prices based on historical patterns.
+**Objective:** Price a hypothetical natural gas storage contract.
 
-Task 2: Gas Storage Contract Pricing
-Objective: To price a hypothetical natural gas storage contract.
+**Methodology:**
+- Simulated cash flows for injection and withdrawal periods.
+- Considered parameters like market prices, storage limits, injection/withdrawal rates, and daily storage costs.
+- Aggregated cash flows and costs to value the contract.
 
-Methodology:
+**Key Outcome:** A working financial model to value gas storage derivatives under operational constraints.
 
-Designed and implemented a Python function to simulate the cash flows associated with a gas storage contract.
+---
 
-The model accounts for various parameters including injection dates, withdrawal dates, market prices, injection/withdrawal rates, maximum storage capacity, and daily storage costs.
+### 🏦 Task 3: Credit Default Prediction & Expected Loss
 
-Calculated the total value of the contract by aggregating cash flows and subtracting storage costs.
+**Objective:** Build a model to predict loan default and calculate Expected Loss (EL).
 
-Key Outcome: A functional model to value complex financial derivatives (gas storage contracts) based on market dynamics and operational constraints.
+**Methodology:**
+- Preprocessed and standardized simulated loan data.
+- Trained a **Logistic Regression** model to estimate Probability of Default (PD).
+- Calculated **Expected Loss (EL)** using the formula:  
+  `EL = PD × LGD × EAD`
 
-Task 3: Credit Default Prediction & Expected Loss
-Objective: To build a model predicting loan default and calculate the Expected Loss (EL) for individual borrowers.
+**Key Outcome:** A predictive model for credit risk assessment and expected loss calculation.
 
-Methodology:
+---
 
-Loaded simulated loan data, identifying relevant features and the target variable (default).
+### 📊 Task 4: FICO Score Bucketing Methodologies
 
-Split the data into training and testing sets and applied StandardScaler for feature standardization.
+**Objective:** Explore and compare methodologies for FICO score bucketing.
 
-Trained a Logistic Regression model to predict the Probability of Default (PD).
+**Methodology:**
+- **MSE-Based Bucketing:** Used K-Means clustering to minimize intra-cluster variance.
+- **Log-Likelihood Optimization:** Used `scipy.optimize.minimize` to optimize bucket boundaries based on log-likelihood of defaults.
+- Assigned credit ratings to buckets for risk categorization.
 
-Developed a function to calculate Expected Loss (EL) using the formula: EL=PD
-timesLGD
-timesEAD (where LGD is Loss Given Default and EAD is Exposure at Default, represented by loan_amount).
+**Key Outcome:** Comparative analysis of credit score segmentation for improved risk stratification.
 
-Key Outcome: A predictive model for credit risk assessment and a framework for calculating expected financial losses on loans.
+---
 
-Task 4: FICO Score Bucketing Methodologies
-Objective: To explore and compare different methodologies for bucketing FICO scores to enhance credit risk assessment.
+## 🛠️ Technologies Used
 
-Methodology:
+- **Python**: Core programming language
+- **Pandas**: Data manipulation
+- **NumPy**: Numerical operations
+- **scikit-learn**: Machine learning (Logistic Regression, KMeans)
+- **statsmodels**: Time series (ARIMA)
+- **Matplotlib**: Visualizations
+- **SciPy**: Optimization algorithms
+- **Jupyter Notebook**: Development and presentation
 
-Implemented two distinct approaches for FICO score bucketing:
+---
 
-MSE-Based Bucketing (K-Means Clustering): Utilized K-Means clustering to group FICO scores into N buckets based on minimizing intra-cluster variance.
+## ▶️ How to Run the Code
 
-Log-Likelihood Optimization: Developed an optimization function to determine bucket boundaries that maximize the log-likelihood of default probabilities within each bucket.
-
-Assigned credit ratings based on the derived bucket boundaries.
-
-Key Outcome: Comparative analysis of advanced statistical techniques for segmenting credit scores, providing insights into more granular risk categorization.
-
-Technologies Used
-Python: Core programming language for all tasks.
-
-Pandas: Data manipulation and analysis.
-
-NumPy: Numerical operations and array handling.
-
-scikit-learn: Machine learning models (Logistic Regression, KMeans) and utilities (train_test_split, StandardScaler).
-
-statsmodels: Time series analysis (ARIMA).
-
-Matplotlib: Data visualization (e.g., for gas price forecasts).
-
-SciPy: Scientific computing, specifically for optimization (scipy.optimize.minimize).
-
-Jupyter Notebook: (Assumed environment for development and presentation).
-
-How to Run the Code
-Clone the repository:
-
+1. **Clone the repository**  
+```bash
 git clone https://github.com/PranayPrasanth/PranayPrasanth.git
 cd PranayPrasanth
-
-Install dependencies:
-
-pip install pandas numpy scikit-learn statsmodels matplotlib scipy
-
-Place data files:
-
-Ensure Nat_Gas (1).csv is in the root directory for Task 1 and Task 2.
-
-Ensure Task 3 and 4_Loan_Data.csv is in the root directory for Task 3 and Task 4.
-
-Run individual scripts:
-
-For Task 1 (Natural Gas Forecasting): python task1_gas_forecasting.py (assuming you name the file)
-
-For Task 2 (Gas Storage Pricing): python task2_gas_pricing.py
-
-For Task 3 & 4 (Credit Risk): python task3_4_credit_risk.py
-
-(Note: You might need to adjust the filenames in the main() functions or run them directly from a Jupyter Notebook if that was your primary development environment.)
-
-Contact
-Feel free to reach out if you have any questions or feedback.
-
-LinkedIn: Pranay Prasanth's LinkedIn Profile
-
-GitHub: PranayPrasanth's GitHub Profile
