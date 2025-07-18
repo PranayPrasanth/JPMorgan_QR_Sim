@@ -85,4 +85,42 @@ The **JPMorgan Chase Quantitative Research Simulation** is designed to expose pa
 - **Pandas**: Data manipulation
 - **NumPy**: Numerical operations
 - **scikit-learn**: Machine learning (Logistic Regression, KMeans)
-- **statsmodel**
+- **statsmodels**: Time series (ARIMA)
+- **Matplotlib**: Visualizations
+- **SciPy**: Optimization algorithms
+- **Jupyter Notebook**: Development and presentation
+
+---
+
+## How to Run the Code
+
+1. **Clone the repository**  
+```bash
+git clone https://github.com/PranayPrasanth/PranayPrasanth.git
+cd PranayPrasanth
+```
+
+2. **Install dependencies**  
+```bash
+pip install pandas numpy scikit-learn statsmodels matplotlib scipy
+```
+
+3. **Place data files in root directory**  
+- `Nat_Gas (1).csv` → for Task 1 and Task 2  
+- `Task 3 and 4_Loan_Data.csv` → for Task 3 and Task 4  
+
+4. **Run individual scripts**  
+```bash
+python task1_gas_forecasting.py
+python task2_gas_pricing.py
+python task3_4_credit_risk.py
+```
+
+> *Alternatively, open and run the corresponding Jupyter Notebooks for each task.*
+
+---
+
+## Contact
+
+- **LinkedIn:** [Pranay Prasanth](https://www.linkedin.com/in/pranayprasanth/)  
+- **GitHub:** [PranayPrasanth](https://github.com/PranayPrasanth)  
