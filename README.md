@@ -26,7 +26,7 @@ The **JPMorgan Chase Quantitative Research Simulation** is designed to expose pa
 
 ## ✅ Tasks Completed
 
-### 🧾 Task 1: Natural Gas Price Forecasting
+### Task 1: Natural Gas Price Forecasting
 
 **Objective:** Forecast future natural gas prices using time series analysis.
 
@@ -39,7 +39,7 @@ The **JPMorgan Chase Quantitative Research Simulation** is designed to expose pa
 
 ---
 
-### 💰 Task 2: Gas Storage Contract Pricing
+### Task 2: Gas Storage Contract Pricing
 
 **Objective:** Price a hypothetical natural gas storage contract.
 
@@ -52,7 +52,7 @@ The **JPMorgan Chase Quantitative Research Simulation** is designed to expose pa
 
 ---
 
-### 🏦 Task 3: Credit Default Prediction & Expected Loss
+### Task 3: Credit Default Prediction & Expected Loss
 
 **Objective:** Build a model to predict loan default and calculate Expected Loss (EL).
 
@@ -66,7 +66,7 @@ The **JPMorgan Chase Quantitative Research Simulation** is designed to expose pa
 
 ---
 
-### 📊 Task 4: FICO Score Bucketing Methodologies
+### Task 4: FICO Score Bucketing Methodologies
 
 **Objective:** Explore and compare methodologies for FICO score bucketing.
 
